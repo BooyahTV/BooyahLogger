@@ -1,0 +1,29 @@
+{
+  "name": "booyahlogger",
+  "version": "1.0.0",
+  "description": "A chat logger for booyah.live",
+  "main": "index.js",
+  "scripts": {
+    "main": "NODE_ENV=production node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BooyahTV/BooyahLogger.git"
+  },
+  "keywords": [
+    "booyah",
+    "booyah.live",
+    "tmi.js",
+    "websockets"
+  ],
+  "author": "Fijxu, elmarceloc",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/BooyahTV/BooyahLogger/issues"
+  },
+  "homepage": "https://github.com/BooyahTV/BooyahLogger#readme",
+  "dependencies": {
+    "tmi.js": "^1.8.5",
+    "ws": "^8.2.3"
+  }
+}
