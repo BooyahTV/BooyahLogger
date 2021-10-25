@@ -1,0 +1,19 @@
+{
+  "gettoken": {
+    "userID": "",
+    "device_id": "",
+    "booyah_session_key": "",
+    "x_csrf_token": "",
+    "cookie": ""
+  },
+
+  "tmiconfig": {
+    "username": "",
+    "oauth": "",
+    "username2": "",
+    "oauth2": "",
+    "channel": "",
+    "ownerchannel": ""
+
+  }
+}
