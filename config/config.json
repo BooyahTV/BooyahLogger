@@ -1,4 +1,8 @@
 {
+  "chat": {
+    "channelID": ""
+  },
+
   "gettoken": {
     "userID": "",
     "device_id": "",

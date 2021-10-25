@@ -1,7 +1,6 @@
 const WebSocket = require("ws");
 const tmi = require("tmi.js");
 
-// const utils = require("./modules/utils");
 const { getconfig } = require("./modules/config");
 
 // Init twitch users
@@ -40,7 +39,7 @@ twitchClient2.connect().catch(console.error);
 // datos de la configuracion ya que se nesesita de una llamada asyncrona
 // a una api de booyah.live
 
-(async () => {
+async () => {
   const hearthBeatRate = 1000 * 60;
   const config = await getconfig();
 
@@ -78,7 +77,10 @@ twitchClient2.connect().catch(console.error);
       code,
       "Tratando de reconectar"
     );
-    twitchClient.say(`${cfg.tmiconfig.ownerchannel}`, "Connection closed, error code: " + code);
+    twitchClient.say(
+      `${cfg.tmiconfig.ownerchannel}`,
+      "Connection closed, error code: " + code
+    );
     ws;
   });
 
@@ -213,4 +215,5 @@ twitchClient2.connect().catch(console.error);
           console.log("twitch client error", err);
         });
     } catch (e) {}
-})();
+  });
+};
